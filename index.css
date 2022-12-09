@@ -1,0 +1,12 @@
+#img {
+    border: 1px solid black ;
+    border-radius: 10px;
+}
+a:hover {
+    background-color: grey;
+}
+h2 {
+    background-color: black;
+    color: white;
+    width: 120px;
+}
