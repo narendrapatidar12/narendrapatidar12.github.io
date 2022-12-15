@@ -1,0 +1,30 @@
+
+#fourth {
+    border: 2px solid black;
+    border-radius: 500px;
+    width: 600px;
+    background-color: blue;
+    margin: 50px;
+    
+}
+#third {
+    border: 1px solid black;
+    border-radius: 400px;
+    background-color: red;
+    width: 700px;
+    margin: 50px;
+}
+#second {
+    border: 1px solid black;
+    border-radius: 400px;
+    background-color: white;
+    width: 800px;
+    margin: 50px;
+}
+#first {
+    border: 1px solid black;
+    border-radius: 450px;
+    background-color: red;
+    width: 900px;
+    margin: 50px;
+}
