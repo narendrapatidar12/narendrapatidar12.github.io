@@ -9,4 +9,8 @@ h2 {
     background-color: black;
     color: white;
     width: 120px;
+    margin: 10px;
+}
+section,table {
+    padding: 20px;
 }
