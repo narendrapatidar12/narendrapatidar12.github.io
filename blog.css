@@ -6,10 +6,12 @@ article {
 }
 header {
     background-color: yellow;
+    font-family: fantasy;
 }
 footer {
     background-color: black;
     color: white;
+    font-family: cursive;
 }
 article:hover {
     border: solid black;
