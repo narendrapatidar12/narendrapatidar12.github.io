@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration form</title>
+    <style>
+        .main {
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 500px;
+            width: 400px;
+            margin: auto;
+        }
+        .form {
+            border: 1px solid black;
+            font-size: 25px;
+            margin: 20px;
+            background-color: rgb(209, 227, 221);
+        }
+        [type="submit"] {
+            font-size: 20px;
+            margin: 5px 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .submit {
+            float: right;
+            margin-right: 60px;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="../project.html">Back</a>
+    <form method="get" action="" class="main">
+        <h1>Register open snippets</h1>
+        <input type="text" name="name" id="name" class="form" placeholder="name"><br>
+        <input type="email" name="email" id="email" class="form" placeholder="email"><br>
+        <input type="password" name="password" id="password" class="form" placeholder="password"><br>
+        <input type="password" name="password" id="co-password" class="form" placeholder="co-password">
+        <input type="submit" name="Login" placeholder="Login" value="Login">
+        <input type="submit" name="Create Account" placeholder="Create Account" class="submit" value="Create Account">
+    </form>
+</body>
+</html>

@@ -1,3 +1,7 @@
+* {
+    max-width: 980px;
+    margin: auto;
+}
 article {
     padding: 20px;
     margin: 20px 0px;

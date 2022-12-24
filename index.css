@@ -1,6 +1,7 @@
 body {
     max-width: 980px;
     margin: auto;
+    position: relative;
 }
 /* .p {
     border: 2px solid black;
@@ -45,6 +46,8 @@ section,table {
 nav {
     border: 2px solid black;
     background-color: black;
+    position: sticky;
+    top: 2px;
 }
 h1 {
     display: inline-block;  
