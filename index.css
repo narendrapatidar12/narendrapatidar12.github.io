@@ -53,13 +53,13 @@ h1 {
     display: inline-block;  
     color: blue;
 }
-.project {
+.pro {
     margin: 20px;
     color: white;
     text-decoration: none;
     border: 1px solid white;
 }
-.project:hover {
+.pro:hover {
     background-color: cyan;
 }
 #search {
