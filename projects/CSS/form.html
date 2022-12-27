@@ -5,52 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
     <style>
-        div {
-            /* border: 2px solid black; */
-            background-image: url(./rr.jpg);
-            background-repeat: no-repeat;
-            height: 400px;
-            /* border-radius: 10px; */
-            width: 340px;
-            margin: auto;
+        body {
+            background: linear-gradient(rgb(170, 170, 223), rgb(181, 160, 160));
         }
-        h2{
-            /* margin-top: 20px; */
-            padding: 10px;
-            text-align: center;
+        form { 
+            float: right;
+            height: 600px;
+            width: 400px;
+            margin: 20px 200px 20px 0px;
+            border-radius: 10px;
+        }
+        label {
+            padding: 20px;
         }
         input {
-            font-size: 20px;
-            margin: 15px 15px 15px 50px;
-            padding: 2px;
+            font-size: 30px;
+            margin: 20px;
+            padding: 10px;
         }
-        button {
-            margin-left: 140px;
-            margin-top: 25px;
-            padding: 4px 6px;
-            background: linear-gradient(to right, rgb(156, 141, 141) , rgb(180, 180, 191));
-            box-shadow: 2px 2px 10px 5px rgb(34, 31, 31);
-            transition-property: border-radius;
-            transition-duration: 3s;
+        img {
+            height: 500px;
+            width: 500px;
+            margin: 20px 0px 20px 200px;
         }
-        button:hover {
-            /* padding: 0px 20px; */
-            border-radius: 20px;
-            background: linear-gradient(to right, rgb(199, 199, 214), rgb(186, 172, 172));
+        #submit {
+            border-radius: 25px;
+            background-color: black;
+            color: white;
+            margin-top: 50px; 
+        
         }
     </style>
 </head>    
 <body>
     <a href="../project.html">Back</a>
     <div>
-    <form method="get">
-        <h2>Sign Up</h2>
-        <input type="text" placeholder="First name">
-        <input type="text" placeholder="Last name">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
-        <button>submit</button>
+        <img src="./man.webp" alt="">
+        <form method="get">
+            <label for="USERNAME">USERNAME</label><br>
+            <input type="text" id="USERNAME" placeholder="name">
+            <label for="EMAIL">EMAIL</label><br>
+            <input type="email" id="EMAIL" placeholder="Email">
+            <label for="PASSWORD">PASSWORD</label><br>
+            <input type="password" id="PASSWORD" placeholder="Password">
+            <input type="submit" name="submit" id="submit" value="REGISTER">
+            <a href="../background.html">I am already a member</a>
+        </form>
     </div>
-    </form>
+
+   
 </body>
 </html>
