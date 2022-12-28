@@ -16,6 +16,9 @@ body {
 .n:hover {
   background-color: blue;
 } */
+blockquote {
+    opacity: 75%;
+}
 .ab {
     position: fixed;
     bottom: 10px;
