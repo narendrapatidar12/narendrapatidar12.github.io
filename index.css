@@ -80,5 +80,14 @@ img {
     body{
         width: 400px;
     }
+    h1 {
+        font-size: 12px;
+    }
+    #search {
+        margin: 5px;
+    }
+    .pro {
+        font-size: 12px;
+    }
   }
   
