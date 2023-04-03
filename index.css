@@ -22,6 +22,7 @@ nav {
   background-color: rgb(179, 192, 188);
   position: fixed;
   top: 2px;
+  z-index: 1;
 }
 
 nav li {
