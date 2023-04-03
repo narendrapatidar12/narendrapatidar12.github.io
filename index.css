@@ -1,21 +1,59 @@
-body {
-    max-width: 980px;
-    margin: auto;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* header */
+
+nav {
+  height: 60px;
+  width: 90%;
+  /* margin: 0 auto; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid rgb(231, 220, 220);
+  background-color: rgb(179, 192, 188);
+  position: fixed;
+  top: 2px;
+}
+
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+  background-color: rgb(122, 142, 142);
+  padding: 8px;
+  margin: 8px;
+  border-radius: 50px;
+}
+nav li a {
+  position: relative;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+
+/* main */
+
+.main{
     position: relative;
+    margin-top: 80px;
 }
-/* .p {
-    border: 2px solid black;
-    padding: 8px;
+
+body {
+    width: 90%;
+    margin: auto;
 }
-.n {
-    border: 1px solid purple;
-    display: inline;    
-    padding: 5px;
-    margin: 5px;
-}
-.n:hover {
-  background-color: blue;
-} */
+
 blockquote {
     opacity: 75%;
 }
@@ -28,14 +66,12 @@ blockquote {
     border: 1px solid black ;
     border-radius: 10px;
 }
-nav:hover {
-    background-color: navy;
-}
+
 h2 {
     background-color: black;
     color: white;
     width: 130px;
-    margin: 10px;
+    margin: 10px 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
 h2:hover {
@@ -46,51 +82,35 @@ section,table {
 }
 
 
-nav {
-    border: 2px solid black;
-    background-color: black;
-    position: sticky;
-    top: 2px;
-}
 h1 {
     display: inline-block;  
     color: blue;
 }
-.pro {
-    margin: 20px;
-    color: white;
-    text-decoration: none;
-    border: 1px solid white;
-}
-.pro:hover {
-    background-color: cyan;
-}
-#search {
-    float: right;
-    color: white;
-    margin: 20px;
-}
-#search:hover {
-    background-color: cadetblue;
-}
+
 img {
     /* position: fixed; */
     bottom: 10px;
     right:  15px;
 }
 
+ul > ol > li{
+    margin: 1px 20px;
+}
+
 @media (max-width: 600px) {
     body{
-        width: 400px;
+        width: 90%;
     }
     h1 {
         font-size: 12px;
     }
-    #search {
-        margin: 5px;
-    }
-    .pro {
-        font-size: 12px;
-    }
+    nav li {
+        display: inline-block;
+        margin-right: 0.5rem;
+        background-color: rgb(122, 142, 142);
+        padding: 4px;
+        margin: 4px;
+        border-radius: 25px;
+      }
   }
   
