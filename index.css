@@ -8,7 +8,6 @@
   list-style-type: none;
   font-family: 'Rubik', sans-serif;
 }
-
 /* header */
 
 nav {
@@ -25,7 +24,6 @@ nav {
   top: 2px;
 }
 
-
 nav li {
   display: inline-block;
   margin-right: 1rem;
@@ -40,7 +38,6 @@ nav li a {
   color: #333;
   text-decoration: none;
 }
-
 
 /* main */
 
@@ -113,4 +110,3 @@ ul > ol > li{
         border-radius: 25px;
       }
   }
-  
