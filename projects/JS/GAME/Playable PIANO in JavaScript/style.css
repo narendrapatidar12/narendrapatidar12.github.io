@@ -13,6 +13,9 @@ body {
   min-height: 100vh;
   background: #E3F2FD;
 }
+.navbar {
+  color: #60CBFF;
+ }
 .wrapper {
   padding: 35px 40px;
   border-radius: 20px;

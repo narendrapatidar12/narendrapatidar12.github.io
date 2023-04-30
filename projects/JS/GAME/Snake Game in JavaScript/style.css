@@ -13,6 +13,9 @@ body {
   min-height: 100vh;
   background: #E3F2FD;
 }
+.navbar {
+ color: #60CBFF;
+}
 .wrapper {
   width: 65vmin;
   height: 70vmin;
