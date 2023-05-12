@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style-type: none;
-  font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Rubik', sans-serif;
 }
 
 body {
@@ -15,11 +15,10 @@ body {
 
 /* header */
 
-  a{
+a {
     text-decoration: none;
-  }
-  
-  .navbar{
+}
+.navbar {
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -28,46 +27,49 @@ body {
     font-size: 20px;
     position: fixed;
     z-index: 1;
-  }
-  
-  .logo{
+}
+
+.logo {
     margin-left: 5%;
     color: #ffffff;
     font-size: 25px;
     font-weight: bold;
-  }
-  .logo_header{
+}
+
+.logo_header {
     display: flex;
     margin: 10px 20px;
-  }
-  
-  .main_nav{
+}
+
+.main_nav {
     display: flex;
     float: right;
     margin: 20px;
     justify-content: space-between;
     list-style: none;
-  }
-  .main_nav li:hover{
+}
+
+.main_nav li:hover {
     background-color: gray
-  }
-  
-  .main_nav li{
+}
+
+.main_nav li {
     display: inline;
     color: #ffffff;
     margin: 0 20px;
-  }
-  .main_nav li a{
-    color: #ffffff;
-  }
+}
 
-  .navbar_toggle {
+.main_nav li a {
+    color: #ffffff;
+}
+
+.navbar_toggle {
     display: none;
-    }
+}
 
 /* main */
 
-.main{
+.main {
     position: relative;
     top: 80px;
     margin-top: 20px;
@@ -81,10 +83,10 @@ blockquote {
 .ab {
     position: fixed;
     bottom: 10px;
-    right:  15px;
+    right: 15px;
 }
 #img {
-    border: 1px solid black ;
+    border: 1px solid black;
     border-radius: 10px;
 }
 
@@ -96,87 +98,87 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 h2:hover {
-   background-color: grey;
+    background-color: grey;
 }
-section,table {
+
+section,
+table {
     padding: 30px 25px;
 }
-
-
 h1 {
-    display: inline-block;  
+    display: inline-block;
     color: blue;
 }
 
 img {
     bottom: 10px;
-    right:  15px;
+    right: 15px;
 }
 
-ul > ol > li{
+ul>ol>li {
     margin: 1px 20px;
 }
 
 @media (max-width: 600px) {
-    body{
+    body {
         width: 90%;
     }
+
     h1 {
         font-size: 12px;
     }
-  }
+}
 
 
-  @media only screen and (max-width : 992px){
+@media only screen and (max-width : 992px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100vw;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        background-color: #000000;
+        font-size: 20px;
+    }
 
-   
-    .navbar{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 100vw;
-      padding-top: 2%;
-      padding-bottom: 2%;
-      background-color: #000000;
-      font-size: 20px;
+    .main_nav {
+        display: none;
     }
-  
-    .main_nav{
-      display: none;
+
+    .show_nav {
+        padding-top: 2%;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
     }
-  
-    .show_nav{
-      padding-top: 2%;
-      display: flex;
-      width: 100vw;
-      height: 100vh;
-      flex-direction: column;
-      justify-content: flex-start;
+
+    .main_nav li {
+        width: 100%;
+        height: 50px;
+        font-size: 25px;
+        justify-content: center;
+        text-align: center;
+        padding: 0%;
     }
-  
-    .main_nav li{
-      width: 100%;
-      height: 50px;
-      font-size: 25px;
-      justify-content: center;
-      text-align: center;
-      padding: 0%;
-    }
+
     .navbar_toggle {
-      margin-left: 5%;
-      margin-right: 5%;
-      font-size: 30px;
-      color: #ffffff;
-      background: transparent;
-      border-color: transparent;
-      transition: all 0.3s linear;
-      cursor: pointer;
-      display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 30px;
+        color: #ffffff;
+        background: transparent;
+        border-color: transparent;
+        transition: all 0.3s linear;
+        cursor: pointer;
+        display: block;
     }
-    .logo_header{
-      width: 90%;
-      justify-content: space-between;
-      margin-right: 2%;
+
+    .logo_header {
+        width: 90%;
+        justify-content: space-between;
+        margin-right: 2%;
     }
-    
-  } 
+}
