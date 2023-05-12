@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- <meta charset="UTF-8"> -->
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume-Narendra</title>
     <link rel="stylesheet" href="./index.css">
@@ -15,23 +14,23 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <!-- <img src="logo.png" alt="Logo" /> -->
+
+    <nav class="navbar">
+        <div class="logo_header">       
                 <h1><i class="fa fa-snowflake fa-fw fa-xl"></i> Narendra patidar</h1>
-            </div>
-            <ul>
-                <div id="marker"></div>
-                <li>
-                    <a href="./blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="./projects/project.html">Projects</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+            <button class="navbar_toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <ul class="main_nav">
+            <li>
+                <a href="./blog.html" class="nav_links">Blog</a>
+            </li>
+            <li>
+                <a href="./projects/project.html" class="nav_links">Projects</a>
+            </li>
+        </ul>
+    </nav>
 
     <div class="main">
         <main>
@@ -102,6 +101,15 @@
             </section>
         </footer>
     </div>
+
+    <script>
+        const navToggle = document.querySelector(".navbar_toggle");
+        const links = document.querySelector(".main_nav");
+
+        navToggle.addEventListener('click', function () {
+            links.classList.toggle("show_nav");
+        })
+    </script>
 </body>
 
 </html>

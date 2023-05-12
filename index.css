@@ -1,6 +1,5 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,48 +7,72 @@
   list-style-type: none;
   font-family: 'Rubik', sans-serif;
 }
+
+body {
+    width: 90%;
+    margin: auto;
+}
+
 /* header */
 
-nav {
-  height: 60px;
-  width: 90%;
-  /* margin: 0 auto; */
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 2px solid rgb(231, 220, 220);
-  background-color: rgb(202, 221, 215);
-  position: fixed;
-  top: 2px;
-  z-index: 1;
-}
+  a{
+    text-decoration: none;
+  }
+  
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-bottom: 10px;
+    background-color: #000000;
+    font-size: 20px;
+    position: fixed;
+    z-index: 1;
+  }
+  
+  .logo{
+    margin-left: 5%;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .logo_header{
+    display: flex;
+    margin: 10px 20px;
+  }
+  
+  .main_nav{
+    display: flex;
+    float: right;
+    margin: 20px;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .main_nav li:hover{
+    background-color: gray
+  }
+  
+  .main_nav li{
+    display: inline;
+    color: #ffffff;
+    margin: 0 20px;
+  }
+  .main_nav li a{
+    color: #ffffff;
+  }
 
-nav li {
-  display: inline-block;
-  margin-right: 1rem;
-  background-color: rgb(122, 142, 142);
-  padding: 8px;
-  margin: 8px;
-  border-radius: 50px;
-}
-nav li a {
-  position: relative;
-  font-size: 1rem;
-  color: #333;
-  text-decoration: none;
-}
+  .navbar_toggle {
+    display: none;
+    }
 
 /* main */
 
 .main{
     position: relative;
-    margin-top: 80px;
-}
-
-body {
+    top: 80px;
+    margin-top: 20px;
     width: 90%;
-    margin: auto;
+    z-index: 0;
 }
 
 blockquote {
@@ -86,7 +109,6 @@ h1 {
 }
 
 img {
-    /* position: fixed; */
     bottom: 10px;
     right:  15px;
 }
@@ -102,12 +124,59 @@ ul > ol > li{
     h1 {
         font-size: 12px;
     }
-    nav li {
-        display: inline-block;
-        margin-right: 0.5rem;
-        background-color: rgb(122, 142, 142);
-        padding: 4px;
-        margin: 4px;
-        border-radius: 25px;
-      }
   }
+
+
+  @media only screen and (max-width : 992px){
+
+   
+    .navbar{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100vw;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      background-color: #000000;
+      font-size: 20px;
+    }
+  
+    .main_nav{
+      display: none;
+    }
+  
+    .show_nav{
+      padding-top: 2%;
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  
+    .main_nav li{
+      width: 100%;
+      height: 50px;
+      font-size: 25px;
+      justify-content: center;
+      text-align: center;
+      padding: 0%;
+    }
+    .navbar_toggle {
+      margin-left: 5%;
+      margin-right: 5%;
+      font-size: 30px;
+      color: #ffffff;
+      background: transparent;
+      border-color: transparent;
+      transition: all 0.3s linear;
+      cursor: pointer;
+      display: block;
+    }
+    .logo_header{
+      width: 90%;
+      justify-content: space-between;
+      margin-right: 2%;
+    }
+    
+  } 
