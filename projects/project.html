@@ -1,60 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
-    <style>
-        * {
-            max-width: 90%;
-            margin: auto;
-            padding: 5px;
-        }
-        header {
-            margin: 5px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-        h3 {
-            margin: 10px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-    </style>
-</head>
-<body>
-  <nav>
-      <a href="../index.html">Back to main </a>
-  </nav>
-  <main>
-      <header>
-          <h1>Projects</h1>
-      </header>
-      <section>
-        <h3>HTML : -</h3>
-        <ol>
-              <li> <a href="./HTML/img.html">Image</a></li>
-              <li> <a href="./HTML/forms.html">Forms</a></li>
-              <li> <a href="./HTML/media.html">Media</a></li>
-          </ol>
+    <link rel="stylesheet" href="./projects.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">Back to main</a>
+    </nav>
+    <main>
+      <section class="dropdown-section">
+        <input type="checkbox" id="htmlToggle" class="dropdown-toggle" />
+        <label for="htmlToggle" class="dropdown-label"
+          >HTML -
+          <span class="para">Markup language to structure web pages</span>
+          <span class="arrow">&gt;</span>
+        </label>
+        <ul class="dropdown-list">
+          <li><a href="./HTML/img.html">Image</a></li>
+          <li><a href="./HTML/forms.html">Forms</a></li>
+          <li><a href="./HTML/media.html">Media</a></li>
+        </ul>
       </section>
-      <section>
-        <h3>CSS : -</h3>
-        <ol>
-             <li><a href="./CSS/star.html">star style</a></li>
-             <li><a href="./CSS/photo-gallery.html">Gallery</a></li>
-             <li><a href="./CSS/contact.html">Contact</a></li>
-             <li><a href="./CSS/form.html">Register Form</a></li>
-             <li><a href="./CSS/watch.html">Watch</a></li>
-        </ol>
+      <section class="dropdown-section">
+        <input type="checkbox" id="cssToggle" class="dropdown-toggle" />
+        <label for="cssToggle" class="dropdown-label"
+          >CSS-
+          <span class="para"
+            >Stylesheet language to design the layout and appearance of web
+            pages</span
+          >
+          <span class="arrow">&gt;</span>
+        </label>
+        <ul class="dropdown-list">
+          <li><a href="./CSS/star.html">Star Style</a></li>
+          <li><a href="./CSS/photo-gallery.html">Gallery</a></li>
+          <li><a href="./CSS/contact.html">Contact</a></li>
+          <li><a href="./CSS/form.html">Register Form</a></li>
+          <li><a href="./CSS/watch.html">Watch</a></li>
+        </ul>
       </section>
-      <section>
-        <h3>Js : -</h3>
-        <ol>
-             <li><a href="./JS/add/index.html">Changing-color</a></li>
-             <li><a href="./JS/CLOCK/index.html">current-Clock</a></li>
-             <li><a href="./JS/Capitalize-text/index.html">Capitalize-Text</a></li>
-        </ol>
+      <section class="dropdown-section">
+        <input type="checkbox" id="jsToggle" class="dropdown-toggle" />
+        <label for="jsToggle" class="dropdown-label"
+          >JavaScript-
+          <span class="para"
+            >Programming language to add interactivity and dynamic behavior to
+            web pages</span
+          >
+          <span class="arrow">&gt;</span>
+        </label>
+        <ul class="dropdown-list">
+          <li><a href="./JS/add/index.html">Changing Color</a></li>
+          <li><a href="./JS/CLOCK/index.html">Current Clock</a></li>
+          <li><a href="./JS/Capitalize-text/index.html">Capitalize Text</a></li>
+        </ul>
       </section>
-  </main>
-</body>
+      <!-- React Section -->
+      <section class="dropdown-section">
+        <input type="checkbox" id="reactToggle" class="dropdown-toggle" />
+        <label for="reactToggle" class="dropdown-label"
+          >REACT-
+          <span class="para"
+            >JavaScript library for building user interfaces, focusing on
+            component-based development</span
+          >
+          <span class="arrow">&gt;</span>
+        </label>
+        <ul class="dropdown-list">
+          <li><a href="https://npsignature.netlify.app/">Signature Pad</a></li>
+        </ul>
+      </section>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggles = document.querySelectorAll(".dropdown-toggle");
+
+        toggles.forEach(function (toggle) {
+          toggle.addEventListener("change", function () {
+            // Collapse all dropdowns except the clicked one
+            toggles.forEach(function (otherToggle) {
+              if (otherToggle !== toggle) {
+                otherToggle.checked = false;
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
