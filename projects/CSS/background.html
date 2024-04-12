@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration Form</title>
+    <title>Login Form</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -21,22 +21,19 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        max-width: 1200px; /* Adjust as needed */
+        max-width: 600px; /* Adjust as needed */
         padding: 20px;
-      }
-
-      .image {
-        max-width: 50%; /* Adjust as needed */
-        margin-right: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
       }
 
       form {
-        background-color: #fff;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         width: 100%;
-        max-width: 50%; /* Adjust as needed */
+        max-width: 400px; /* Adjust as needed */
+        padding: 20px;
+        box-sizing: border-box;
       }
 
       label {
@@ -80,37 +77,11 @@
       .back-link:hover {
         text-decoration: underline;
       }
-
-      @media (max-width: 900px) {
-        .container {
-          flex-direction: column;
-          align-items: stretch;
-        }
-
-        .image {
-          max-width: 100%;
-          margin-right: 0;
-          margin-bottom: 20px;
-        }
-
-        form {
-          max-width: 100%;
-        }
-      }
     </style>
   </head>
   <body>
     <div class="container">
-      <img class="image" src="./man.webp" alt="Man Image" />
       <form method="post" onsubmit="return validateForm()">
-        <label for="USERNAME">USERNAME</label>
-        <input
-          type="text"
-          id="USERNAME"
-          name="USERNAME"
-          placeholder="Enter your username"
-          required
-        />
         <label for="EMAIL">EMAIL</label>
         <input
           type="email"
@@ -127,26 +98,21 @@
           placeholder="Enter your password"
           required
         />
-        <input type="submit" name="submit" id="submit" value="REGISTER" />
-        <a class="back-link" href="./background.html">I am already a member</a>
+        <input type="submit" name="submit" id="submit" value="LOGIN" />
+        <a class="back-link" href="./form.html">Create an account</a>
       </form>
     </div>
-
     <script>
       function validateForm() {
-        var username = document.getElementById("USERNAME").value;
         var email = document.getElementById("EMAIL").value;
         var password = document.getElementById("PASSWORD").value;
 
-        if (
-          username.trim() == "" ||
-          email.trim() == "" ||
-          password.trim() == ""
-        ) {
+        if (email.trim() === "" || password.trim() === "") {
           alert("Please fill in all required fields.");
           return false;
         }
-        return true;
+        window.location.href = "https://narendrapatidar12.github.io/";
+        return false;
       }
     </script>
   </body>

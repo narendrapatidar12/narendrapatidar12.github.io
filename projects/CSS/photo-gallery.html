@@ -1,126 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      div {
+        border: 2px solid black;
+        height: 600px;
+        width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+      }
+      #a {
+        /* background-color: aqua; */
+        height: 200px;
+        width: 200px;
+      }
+      #b {
+        /* background-color: gray; */
+        height: 200px;
+        width: 200px;
+      }
+      #c {
+        /* background-color: rebeccapurple; */
+        height: 200px;
+        width: 200px;
+      }
+      #d {
+        /* background-color: black; */
+        height: 200px;
+        width: 200px;
+      }
+      #e {
+        /* background-color: red; */
+        height: 200px;
+        width: 200px;
+      }
+      #f {
+        /* background-color: darkgreen; */
+        height: 200px;
+        width: 200px;
+      }
+      #g {
+        /* background-color: darkorange; */
+        height: 200px;
+        width: 200px;
+      }
+      #h {
+        /* background-color: yellow; */
+        height: 200px;
+        width: 200px;
+      }
+      #i {
+        /* background-color: fuchsia; */
+        height: 200px;
+        width: 200px;
+      }
+
+      @media (max-width: 600px) {
         div {
-            border: 2PX solid black;
-            height: 600px;
-            width: 600px;
-            display: flex;
-            flex-wrap: wrap;
-            margin: auto;
+          border: 2px solid black;
+          height: 270px;
+          width: 270px;
+          display: flex;
+          flex-wrap: wrap;
+          margin: auto;
         }
         #a {
-            /* background-color: aqua; */
-            height: 200px;
-            width: 200px;
+          height: 90px;
+          width: 90px;
         }
-        #b { 
-            /* background-color: gray; */
-            height: 200px;
-            width: 200px;
+        #b {
+          height: 90px;
+          width: 90px;
         }
         #c {
-            /* background-color: rebeccapurple; */
-            height: 200px;
-            width: 200px;
+          height: 90px;
+          width: 90px;
         }
         #d {
-            /* background-color: black; */
-            height: 200px;
-            width: 200px;
-        }  
+          height: 90px;
+          width: 90px;
+        }
         #e {
-            /* background-color: red; */
-            height: 200px;
-            width: 200px;
+          height: 90px;
+          width: 90px;
         }
         #f {
-            /* background-color: darkgreen; */
-            height: 200px;
-            width: 200px;
+          height: 90px;
+          width: 90px;
         }
         #g {
-            /* background-color: darkorange; */
-            height: 200px;
-            width: 200px;
+          height: 90px;
+          width: 90px;
         }
         #h {
-            /* background-color: yellow; */
-            height: 200px;
-            width: 200px;
+          height: 90px;
+          width: 90px;
         }
         #i {
-            /* background-color: fuchsia; */
-            height: 200px;
-            width: 200px;
+          height: 90px;
+          width: 90px;
+        }
+        nav {
+          background-color: #333;
+          padding: 10px;
         }
 
-        @media (max-width:600px) {
-            div {
-                border: 2PX solid black;
-                height: 270px;
-                width: 270px;
-                display: flex;
-                flex-wrap: wrap;
-                margin: auto;
-            }
-            #a {
-                height: 90px;
-                width: 90px;
-            }
-            #b { 
-                height: 90px;
-                width: 90px;
-            }
-            #c {
-                height: 90px;
-                width: 90px;
-            }
-            #d {
-                height: 90px;
-                width: 90px;
-            }  
-            #e {
-                height: 90px;
-                width: 90px;
-            }
-            #f {
-                height: 90px;
-                width: 90px;
-            }
-            #g {
-                height: 90px;
-                width: 90px;
-            }
-            #h {
-                height: 90px;
-                width: 90px;
-            }
-            #i {
-                height: 90px;
-                width: 90px;
-            }
-           
+        nav a {
+          color: #fff;
+          text-decoration: none;
         }
+
+        nav a.back_button:hover {
+          background-color: #555;
+        }
+      }
     </style>
-</head>
-<body>
-    <a href="../project.html">Back</a>
+  </head>
+  <body>
+    <nav>
+      <a href="../project.html" class="back_button">Back</a>
+    </nav>
+
     <div>
-        <img id="a" src="./a.jpeg" alt="">
-        <img id="b" src="./b.webp" alt="">
-        <img id="c" src="./c.jpeg" alt="">
-        <img id="d" src="./d.jpeg" alt="">
-        <img id="e" src="./e.jpeg" alt="">
-        <img id="f" src="./f.jpeg" alt="">
-        <img id="g" src="./g.jpeg" alt="">
-        <img id="h" src="./h.jpeg" alt="">
-        <img id="i" src="./i.jpeg" alt="">
+      <img id="a" src="./a.jpeg" alt="" />
+      <img id="b" src="./b.webp" alt="" />
+      <img id="c" src="./c.jpeg" alt="" />
+      <img id="d" src="./d.jpeg" alt="" />
+      <img id="e" src="./e.jpeg" alt="" />
+      <img id="f" src="./f.jpeg" alt="" />
+      <img id="g" src="./g.jpeg" alt="" />
+      <img id="h" src="./h.jpeg" alt="" />
+      <img id="i" src="./i.jpeg" alt="" />
     </div>
- 
-</body>
+  </body>
 </html>
