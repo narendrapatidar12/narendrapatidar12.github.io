@@ -1,168 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="./contact.css">
-</head>
-<body>
-    <a href="../project.html">Back</a>
-    <div>
-        <img src="./imgct.png" alt="">
-        <div class="A">
-            <h2 class="a">Word A</h2>
-            <ol>
-                <li>a</li>
-                <li>ab</li>
-                <li>abc</li>
-                <li>abcd</li>
-                <li>abcd</li>
-                <li>abcd</li>
-                <li>abcd</li>
-                <li>abcd</li>
-                <li>abcde</li>
-                <li>aa</li>
-                <li>aabb</li>
-                <li>aabbcc</li>
-                <li>aabbccd</li>
-                <li>aaa</li>
-                <li>aaaa</li>
-                <li>aaaaaa</li>
-                <li>aaabaa</li>
-                <li>abdaa</li>
-                <li>abdca</li>
-                <li>abdce</li>
-                <li>abdce</li>
-                <li>abdce</li>
-                <li>abdce</li>
-                <li>abdce</li>
-            </ol>
-        </div>
-        <div class="B">
-            <h2 class="b">Word B</h2>
-            <ol>
-                <li>b</li>
-                <li>ba</li>
-                <li>bac</li>
-                <li>bb</li>
-                <li>bba</li>
-                <li>bbaa</li>
-                <li>bc</li>
-                <li>baa</li>
-                <li>bab</li>
-                <li>baba</li>
-                <li>babb</li>
-                <li>bbb</li>
-                <li>bbbc</li>
-                <li>bbbc</li>
-                <li>bbbc</li>
-                <li>bbbca</li>
-                <li>bbbcc</li>
-                <li>babcc</li>
-                <li>bcbcc</li>
-                <li>bdbcc</li>
-                <li>bebcc</li>
-                <li>bec</li>
-                <li>bebc</li>
-                <li>bebacc</li>
-                <li>beacc</li>
-            </ol>
-        </div>
-        <div class="C">
-            <h2 class="c">Word C</h2>
-            <ol>
-                <li>c</li>
-                <li>cc</li>
-                <li>ccc</li>
-                <li>cccc</li>
-                <li>ca</li>
-                <li>caa</li>
-                <li>caaa</li>
-                <li>caaaa</li>
-                <li>cab</li>
-                <li>cabb</li>
-                <li>cabc</li>
-                <li>cabcc</li>
-                <li>cabcd</li>
-                <li>cabcdd</li>
-                <li>cabcde</li>
-                <li>cb</li>
-                <li>cbb</li>
-                <li>cbbb</li>
-                <li>cbbb</li>
-                <li>cbbb</li>
-                <li>cbbbb</li>
-                <li>cbc</li>
-                <li>cbcc</li>
-                <li>cbccc</li>
-                <li>cbca</li>
-                <li>cbcad</li>
-            </ol>
-        </div>
-        <div class="D">
-            <h2 class="d">Word D</h2>
-            <ol>
-                <li>d</li>
-                <li>dc</li>
-                <li>dcc</li>
-                <li>dccc</li>
-                <li>da</li>
-                <li>daa</li>
-                <li>daaa</li>
-                <li>daaaa</li>
-                <li>daaaa</li>
-                <li>daaaa</li>
-                <li>dab</li>
-                <li>dabb</li>
-                <li>dabc</li>
-                <li>dabcc</li>
-                <li>dabcd</li>
-                <li>dabcdd</li>
-                <li>dabcde</li>
-                <li>db</li>
-                <li>dbb</li>
-                <li>dbbb</li>
-                <li>dbbbb</li>
-                <li>dbc</li>
-                <li>dbcc</li>
-                <li>dbccc</li>
-                <li>dbca</li>
-                <li>dbcad</li>
-            </ol>
-        </div>
-        <div class="E">
-            <h2 class="e">Word E</h2>
-            <ol>
-                <li>e</li>
-                <li>ec</li>
-                <li>ecc</li>
-                <li>eccc</li>
-                <li>ea</li>
-                <li>eaa</li>
-                <li>eaaa</li>
-                <li>eaaaa</li>
-                <li>eab</li>
-                <li>eabb</li>
-                <li>eabc</li>
-                <li>eabcc</li>
-                <li>eabcd</li>
-                <li>eabcdd</li>
-                <li>eabcde</li>
-                <li>eb</li>
-                <li>ebb</li>
-                <li>ebbb</li>
-                <li>ebbbb</li>
-                <li>ebc</li>
-                <li>ebcc</li>
-                <li>ebccc</li>
-                <li>ebca</li>
-                <li>ebcad</li>
-                <li>ebad</li>
-                <li>ebcd</li>
-            </ol>
-        </div>
+    <link rel="stylesheet" href="./contact.css" />
+  </head>
+  <body>
+    <!-- Back button -->
+    <nav>
+      <a href="../project.html" class="back_button">Back</a>
+    </nav>
+    <div class="contact-list">
+      <!-- Contact groups -->
+      <div class="contact-group">
+        <h2 class="group-heading">A</h2>
+        <ul class="contacts">
+          <!-- Dummy contact items -->
+          <li class="contact-item">Alice Smith</li>
+          <li class="contact-item">Bob Johnson</li>
+          <li class="contact-item">Anna Lee</li>
+          <li class="contact-item">Andrew Thompson</li>
+          <li class="contact-item">Amy Brown</li>
+          <li class="contact-item">Adam Davis</li>
+          <li class="contact-item">Angela Martinez</li>
+          <li class="contact-item">Aaron Wilson</li>
+          <li class="contact-item">Amanda Harris</li>
+          <li class="contact-item">Alex Jackson</li>
+          <li class="contact-item">Ava Taylor</li>
+          <li class="contact-item">Anthony Clark</li>
+          <li class="contact-item">Amelia White</li>
+        </ul>
+      </div>
+      <div class="contact-group">
+        <h2 class="group-heading">B</h2>
+        <ul class="contacts">
+          <!-- Dummy contact items -->
+          <li class="contact-item">Bradley Nelson</li>
+          <li class="contact-item">Brianna Scott</li>
+          <li class="contact-item">Brandon Taylor</li>
+          <li class="contact-item">Brooke Turner</li>
+          <li class="contact-item">Brittany Ward</li>
+          <li class="contact-item">Brett White</li>
+          <li class="contact-item">Bradley Young</li>
+          <li class="contact-item">Bryson Zhang</li>
+          <li class="contact-item">Bailey Anderson</li>
+          <li class="contact-item">Braden Brown</li>
+        </ul>
+      </div>
+      <div class="contact-group">
+        <h2 class="group-heading">C</h2>
+        <ul class="contacts">
+          <!-- Dummy contact items -->
+          <li class="contact-item">Carter White</li>
+          <li class="contact-item">Charlotte Young</li>
+          <li class="contact-item">Cynthia Zhang</li>
+          <li class="contact-item">Cameron Anderson</li>
+          <li class="contact-item">Clayton Brown</li>
+        </ul>
+      </div>
+      <!-- Contact group D -->
+      <div class="contact-group">
+        <h2 class="group-heading">D</h2>
+        <ul class="contacts">
+          <!-- Dummy contact items -->
+          <li class="contact-item">Diana Garcia</li>
+          <li class="contact-item">Dean Hill</li>
+          <li class="contact-item">Donald Jackson</li>
+          <li class="contact-item">Drew Moore</li>
+          <li class="contact-item">Derek Nelson</li>
+          <li class="contact-item">Dennis Parker</li>
+          <li class="contact-item">Dawn Robinson</li>
+          <li class="contact-item">Daisy Sanchez</li>
+          <li class="contact-item">Dwayne Scott</li>
+          <li class="contact-item">Dylan Taylor</li>
+          <li class="contact-item">Dawn Turner</li>
+          <li class="contact-item">Devin Ward</li>
+          <li class="contact-item">Diana White</li>
+          <li class="contact-item">Dominic Young</li>
+          <li class="contact-item">Daisy Zhang</li>
+          <li class="contact-item">Dennis Anderson</li>
+          <li class="contact-item">Donovan Brown</li>
+        </ul>
+      </div>
+      <!-- Contact group E -->
+      <div class="contact-group">
+        <h2 class="group-heading">E</h2>
+        <ul class="contacts">
+          <li class="contact-item">Eva Zhang</li>
+        </ul>
+      </div>
+      <div class="contact-group">
+        <h2 class="group-heading">F</h2>
+        <ul class="contacts">
+          <li class="contact-item">Fiona Adams</li>
+          <li class="contact-item">Frank Baker</li>
+          <li class="contact-item">Freya Carter</li>
+          <li class="contact-item">Felix Clark</li>
+          <li class="contact-item">Felicity Davis</li>
+          <li class="contact-item">Freddie Evans</li>
+          <li class="contact-item">Faith Foster</li>
+        </ul>
+      </div>
+      <!-- Contact group G -->
+      <div class="contact-group">
+        <h2 class="group-heading">G</h2>
+        <ul class="contacts">
+          <li class="contact-item">Gabriel Adams</li>
+          <li class="contact-item">Grace Baker</li>
+          <li class="contact-item">Gavin Carter</li>
+          <li class="contact-item">Georgia Clark</li>
+          <li class="contact-item">Gemma Davis</li>
+          <li class="contact-item">Gavin Evans</li>
+          <li class="contact-item">Gloria Foster</li>
+          <li class="contact-item">Gavin Garcia</li>
+          <li class="contact-item">Gwen Hill</li>
+          <li class="contact-item">Giselle Jackson</li>
+        </ul>
+      </div>
+      <!-- Contact group H -->
+      <div class="contact-group">
+        <h2 class="group-heading">H</h2>
+        <ul class="contacts">
+          <li class="contact-item">Henry Adams</li>
+          <li class="contact-item">Hannah Baker</li>
+          <li class="contact-item">Harrison Carter</li>
+        </ul>
+      </div>
+      <!-- Contact group I -->
+      <div class="contact-group">
+        <h2 class="group-heading">I</h2>
+        <ul class="contacts">
+          <li class="contact-item">Isla Davis</li>
+          <li class="contact-item">Ibrahim Evans</li>
+          <li class="contact-item">Irene Foster</li>
+          <li class="contact-item">Ivan Garcia</li>
+          <li class="contact-item">Isabella Hill</li>
+          <li class="contact-item">Ivy Jackson</li>
+        </ul>
+      </div>
+      <!-- Contact group J -->
+      <div class="contact-group">
+        <h2 class="group-heading">J</h2>
+        <ul class="contacts">
+          <li class="contact-item">Jack Adams</li>
+          <li class="contact-item">Jasmine Baker</li>
+          <li class="contact-item">Jacob Carter</li>
+          <li class="contact-item">Jessica Clark</li>
+          <li class="contact-item">James Davis</li>
+          <li class="contact-item">Jade Evans</li>
+          <li class="contact-item">John Foster</li>
+          <li class="contact-item">Julia Garcia</li>
+          <li class="contact-item">Jack Hill</li>
+          <li class="contact-item">Jordan Jackson</li>
+        </ul>
+      </div>
+      <!-- Contact group K -->
+      <div class="contact-group">
+        <h2 class="group-heading">K</h2>
+        <ul class="contacts">
+          <li class="contact-item">Kyle Adams</li>
+          <li class="contact-item">Katherine Baker</li>
+          <li class="contact-item">Kayla Evans</li>
+          <li class="contact-item">Kenneth Foster</li>
+          <li class="contact-item">Katie Garcia</li>
+          <li class="contact-item">Kaleb Hill</li>
+          <li class="contact-item">Kara Jackson</li>
+        </ul>
+      </div>
+      <!-- Contact group L -->
+      <div class="contact-group">
+        <h2 class="group-heading">L</h2>
+        <ul class="contacts">
+          <li class="contact-item">Luke Adams</li>
+          <li class="contact-item">Lily Baker</li>
+          <li class="contact-item">Logan Carter</li>
+          <li class="contact-item">Lucy Clark</li>
+          <li class="contact-item">Liam Davis</li>
+          <li class="contact-item">Leah Evans</li>
+          <li class="contact-item">Leonard Foster</li>
+          <li class="contact-item">Luna Garcia</li>
+          <li class="contact-item">Leo Hill</li>
+          <li class="contact-item">Lila Jackson</li>
+        </ul>
+      </div>
+      <!-- Contact group M -->
+      <div class="contact-group">
+        <h2 class="group-heading">M</h2>
+        <ul class="contacts">
+          <li class="contact-item">Megan Moore</li>
+          <li class="contact-item">Mark Nelson</li>
+        </ul>
+      </div>
+
+      <!-- Contact group N -->
+      <div class="contact-group">
+        <h2 class="group-heading">N</h2>
+        <ul class="contacts">
+          <li class="contact-item">Nathan Adams</li>
+          <li class="contact-item">Natalie Baker</li>
+          <li class="contact-item">Noah Carter</li>
+          <li class="contact-item">Nora Clark</li>
+          <li class="contact-item">Nolan Davis</li>
+          <li class="contact-item">Nancy Evans</li>
+          <li class="contact-item">Nicholas Foster</li>
+          <li class="contact-item">Naomi Garcia</li>
+          <li class="contact-item">Nina Hill</li>
+          <li class="contact-item">Nathaniel Jackson</li>
+          <li class="contact-item">Nikki King</li>
+          <li class="contact-item">Natalia Lewis</li>
+          <li class="contact-item">Nathanial Martinez</li>
+          <li class="contact-item">Nelly Moore</li>
+          <li class="contact-item">Nadia Nelson</li>
+        </ul>
+      </div>
+
+      <!-- Contact group P -->
+      <div class="contact-group">
+        <h2 class="group-heading">P</h2>
+        <ul class="contacts">
+          <li class="contact-item">Patrick Adams</li>
+          <li class="contact-item">Paige Baker</li>
+          <li class="contact-item">Pamela Jackson</li>
+          <li class="contact-item">Peyton King</li>
+          <li class="contact-item">Philip Lewis</li>
+          <li class="contact-item">Paola Martinez</li>
+          <li class="contact-item">Patricia Moore</li>
+          <li class="contact-item">Pablo Nelson</li>
+        </ul>
+      </div>
+
+      <!-- Contact group R -->
+      <div class="contact-group">
+        <h2 class="group-heading">R</h2>
+        <ul class="contacts">
+          <li class="contact-item">Ryan Adams</li>
+          <li class="contact-item">Rebecca Baker</li>
+          <li class="contact-item">Robert Carter</li>
+          <li class="contact-item">Rachel Clark</li>
+          <li class="contact-item">Richard Davis</li>
+          <li class="contact-item">Riley Evans</li>
+          <li class="contact-item">Reagan Foster</li>
+          <li class="contact-item">Ruby Garcia</li>
+          <li class="contact-item">Raymond Hill</li>
+          <li class="contact-item">Reese Jackson</li>
+        </ul>
+      </div>
+
+      <!-- Contact group S -->
+      <div class="contact-group">
+        <h2 class="group-heading">S</h2>
+        <ul class="contacts">
+          <li class="contact-item">Samuel Adams</li>
+          <li class="contact-item">Samantha Baker</li>
+          <li class="contact-item">Simon Carter</li>
+          <li class="contact-item">Sarah Clark</li>
+          <li class="contact-item">Steven Davis</li>
+          <li class="contact-item">Savannah Evans</li>
+          <li class="contact-item">Sebastian Foster</li>
+          <li class="contact-item">Sophia Garcia</li>
+          <li class="contact-item">Samuel Hill</li>
+          <li class="contact-item">Stephanie Jackson</li>
+        </ul>
+      </div>
+
+      <!-- Contact group T -->
+      <div class="contact-group">
+        <h2 class="group-heading">T</h2>
+        <ul class="contacts">
+          <li class="contact-item">Thomas Adams</li>
+          <li class="contact-item">Taylor Baker</li>
+          <li class="contact-item">Trevor Foster</li>
+          <li class="contact-item">Tessa Garcia</li>
+          <li class="contact-item">Theodore Hill</li>
+          <li class="contact-item">Tabitha Jackson</li>
+        </ul>
+      </div>
+
+      <!-- Contact group U -->
+      <div class="contact-group">
+        <h2 class="group-heading">U</h2>
+        <ul class="contacts">
+          <li class="contact-item">Ulysses Adams</li>
+        </ul>
+      </div>
+
+      <!-- Contact group V -->
+      <div class="contact-group">
+        <h2 class="group-heading">V</h2>
+        <ul class="contacts">
+          <li class="contact-item">Vincent Adams</li>
+          <li class="contact-item">Violet Baker</li>
+          <li class="contact-item">Victor Carter</li>
+          <li class="contact-item">Valerie Clark</li>
+          <li class="contact-item">Vaughn Davis</li>
+        </ul>
+      </div>
+
+      <!-- Contact group W -->
+      <div class="contact-group">
+        <h2 class="group-heading">W</h2>
+        <ul class="contacts">
+          <li class="contact-item">Wesley Adams</li>
+          <li class="contact-item">Willow Baker</li>
+        </ul>
+      </div>
+      <!-- Contact group Y -->
+      <div class="contact-group">
+        <h2 class="group-heading">Y</h2>
+        <ul class="contacts">
+          <li class="contact-item">Yara Garcia</li>
+          <li class="contact-item">Yael Hill</li>
+          <li class="contact-item">Yara Jackson</li>
+        </ul>
+      </div>
+
+      <!-- Contact group Z -->
+      <div class="contact-group">
+        <h2 class="group-heading">Z</h2>
+        <ul class="contacts">
+          <li class="contact-item">Zachary Adams</li>
+          <li class="contact-item">Zara Baker</li>
+          <li class="contact-item">Zane Carter</li>
+          <li class="contact-item">Zoey Jackson</li>
+        </ul>
+      </div>
     </div>
-   
-</body>
+    <!-- Sample image for illustration -->
+    <img src="./imgct.png" alt="Contact Image" />
+  </body>
 </html>
